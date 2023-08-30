@@ -6,4 +6,4 @@ file(
 add_executable(main ${MAIN_SOURCE_FILES})
 
 # link libraries
-target_link_libraries(main PRIVATE shared_lib header_lib static_lib cuda_lib)
+target_link_libraries(main PRIVATE shared_lib header_lib static_lib cuda_lib spdlog)
