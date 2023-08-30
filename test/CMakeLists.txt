@@ -1,1 +1,2 @@
 add_subdirectory(by_googletest)
+add_subdirectory(by_doctest)
