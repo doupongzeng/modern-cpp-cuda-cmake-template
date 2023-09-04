@@ -33,6 +33,13 @@ Checks: >
   -readability-identifier-length,
   -readability-uppercase-literal-suffix,
   -misc-definitions-in-headers,
+  -cppcoreguidelines-pro-bounds-pointer-arithmetic,
+  -*-magic-numbers,
+  -*-narrowing-conversions,
+  -bugprone-implicit-widening-of-multiplication-result,
+  -modernize-use-nullptr,
+  -bugprone-easily-swappable-parameters,
+  -*-avoid-c-arrays,
 WarningsAsErrors: ""
 HeaderFilterRegex: '.*onnxruntime\/core\/.*'
 AnalyzeTemporaryDtors: false

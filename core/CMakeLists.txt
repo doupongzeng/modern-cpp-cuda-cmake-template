@@ -1,4 +1,6 @@
-project(main CXX CUDA)
+project(main CXX)
+
+find_package(OpenCV 4 REQUIRED)
 
 file(
     GLOB_RECURSE MAIN_SOURCE_FILES
@@ -6,4 +8,5 @@ file(
 add_executable(main ${MAIN_SOURCE_FILES})
 
 # link libraries
-target_link_libraries(main PRIVATE shared_lib header_lib static_lib cuda_lib spdlog)
+target_link_libraries(main PRIVATE cuda_lib ${OpenCV_LIBRARIES})
+target_include_directories(main PUBLIC ${OpenCV_INCLUDE_DIRS})
