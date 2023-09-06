@@ -1,0 +1,10 @@
+#include "Time.idl"
+module sys {
+  module msg {
+    struct Header {
+      uint32 seq;
+      sys::msg::Time time_stamp;
+      string frame_id;
+    };
+  };
+};

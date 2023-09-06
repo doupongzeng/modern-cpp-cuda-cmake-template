@@ -33,6 +33,7 @@ Checks: >
   -readability-identifier-length,
   -readability-uppercase-literal-suffix,
   -misc-definitions-in-headers,
+  -bugprone-easily-swappable-parameters,
 WarningsAsErrors: ""
 HeaderFilterRegex: '.*onnxruntime\/core\/.*'
 AnalyzeTemporaryDtors: false

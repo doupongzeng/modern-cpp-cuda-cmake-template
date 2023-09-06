@@ -1,0 +1,14 @@
+#include "Header.idl"
+module sys {
+  module msg {
+    struct Image {
+      sys::msg::Header head;
+      uint32 height;
+      uint32 width;
+      string encoding;
+      uint8 is_bigendian;
+      uint32 step;
+      sequence<uint8> data;
+    };
+  };
+};

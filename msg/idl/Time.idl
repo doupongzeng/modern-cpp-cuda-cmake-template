@@ -1,0 +1,8 @@
+module sys {
+  module msg {
+    struct Time {
+      uint32 sec;
+      uint32 nanosec;
+    };
+  };
+};
